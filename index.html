@@ -1,0 +1,39 @@
+<!-- index.html-->
+<!DOCTYPE html> <!--Das sagt dem Browser, dass es sich um ein HTML5-Dokument handelt-->
+<html lang="de"> <!-- Die sprache der Webseite ist Deutsch-->
+    <head> <!--wichtig für die Funktionsweise der Seite-->
+        <meta charset="UTF-8" /><!-- um sonderzeichen korrekt angezeigt werden-->
+        <!--macht die Seite responsive, also anpassbar für Smartphones und Tablets-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>🫵Task Manager</title> <!--Seitentitel, der oben im Browser-Tab angezeigt wird-->
+        <!--Das verbindet meine HTML-Datei mit meiner CSS-Datei-->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body><!--Hier kommt alles rein, was auf der Webseite sichtbar ist-->
+        <div class="container"> <!--Ein Container, der als "Rahmen" für meinen Inhalt dient-->
+            <button id="toggle-darkmode">🌙 Dark Mode</button>
+            <h1>Task Manager</h1>
+            <form id="task-form"><!--Ein Formular-->
+                <!--Ein Textfeld, in das der Nutzer eine neue Aufgaben eingeben kann
+                placeholder: Das graue Beispiel im Feld
+               required: Der Nutzer muss etwas eingeben, sonst kann er das Formular nicht abschicken-->
+                <input type="text" id="task-input" placeholder="Neue Aufgabe" required />
+                <button type="submit">Hinzufügen</button>
+                <input type="date" id="task-date" />
+
+            </form>
+            
+            <div id="filter-buttons">
+                <button data-filter="all" class="filter-btn active">Alle</button>
+                <button data-filter="open" class="filter-btn">Offen</button>
+                <button data-filter="done" class="filter-btn">Erledigt</button>
+              </div>
+            <!--Eine ungeordnete Liste (ul = unordered list), in die später per JavaScript die Aufgaben eingefügt werden.
+             Jede Aufgabe wird ein <li>-Element in dieser Liste.
+            -->
+            <ul id="task-list"></ul>
+        </div>
+        <script src="app.js"></script> <!--Die javascript-Datei laden-->
+    </body>
+</html>

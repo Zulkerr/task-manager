@@ -1,0 +1,109 @@
+/* style.css */
+body{
+    font-family: sans-serif; /*schriftart setzen wie Arial*/
+    background: #f4f4f4; /*Gibt dem ganzen Seitenhintergrund*/
+    margin: 0; /*Entfernt den Standardabstand außen um das body-Element*/
+    padding: 20px; /*Fügt Innenabstand(zwischen Rand und Inhalt) ein*/
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    background-color: white;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+    }
+  
+    input[type="text"],
+    input[type="date"],
+    button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    #filter-buttons {
+      flex-direction: column;
+    }
+  }
+  
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+}
+
+li{
+    background: #eee;
+    padding: 10px;
+    margin-bottom: 5px;/*Abstand zwischen den Listenelementen.*/
+    display: flex;
+    justify-content: space-between;/*Verteilt den Inhalt links und rechts mit möglichst viel Abstand dazwischen.*/
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.6;
+  }
+  #filter-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .filter-btn {
+    padding: 6px 12px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .filter-btn.active {
+    background-color: #333;
+    color: white;
+  }
+  .filter-button.active {
+    background-color: #333;
+    color: #fff;
+  }
+  body.dark {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  
+  body.dark input,
+  body.dark button,
+  body.dark li {
+    background-color: #333;
+    color: #f0f0f0;
+    border-color: #555;
+  }
+  
+  #toggle-darkmode {
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  
+  
+  
