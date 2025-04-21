@@ -23,16 +23,10 @@ Ein einfacher, eleganter Aufgaben-Manager – geschrieben in HTML, CSS und JavaS
 ## 🚀 Starten
 
 1. Klone das Repository  
-   `git clone https://github.com/deinusername/task-manager.git`
+   `git clone https://github.com/Zulkerr/task-manager.git`
 
 2. Öffne die `index.html` Datei im Browser  
    oder rufe die [Live-Demo](https://deinusername.github.io/task-manager/) auf
 
-## 📸 Vorschau
 
-![Screenshot](screenshot.png)
-
-> 💡 Du kannst ein Screenshot vom Projekt machen und es als `screenshot.png` ins Projekt legen.
-
-## 📂 Projektstruktur
 
